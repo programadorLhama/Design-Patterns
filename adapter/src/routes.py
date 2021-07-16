@@ -14,4 +14,7 @@ class Code():
 
         if token:
             print('Autentificando o Token')
-            write_in_database(message['body']['name'], message['body']['message'])
+            write_in_database(
+                message['body']['name'],
+                message['body']['message']
+            )
